@@ -7,7 +7,7 @@ env:
 script:
   - echo "$MYVAR"
   - printenv | grep ^TRAVIS_
-    #  - ./run.sh
+  - exit 1
 
 after_success:
   - STATE=success ./update_build_status.sh
