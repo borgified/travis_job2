@@ -1,0 +1,16 @@
+language: minimal
+
+env:
+  MYVAR=old_var_job1
+  UPSTREAM_REPO=""
+  UPSTREAM_SHA=""
+script:
+  - echo "$MYVAR"
+  - printenv | grep ^TRAVIS_
+    #  - ./run.sh
+
+after_success:
+  - STATE=success ./update_build_status.sh
+
+after_failure:
+  - STATE=failure ./update_build_status.sh
