@@ -1,10 +1,12 @@
 language: minimal
 
 env:
-  MYVAR=old_var_job1
+  DEFAULT_SETTING=default_job2
+  SPECIAL_SETTING=job2
   UPSTREAM_REPO=""
   UPSTREAM_SHA=""
 
 script:
-  - echo "$MYVAR"
+  - echo "$DEFAULT_SETTING"
+  - echo "$SPECIAL_SETTING"
   - printenv | grep ^TRAVIS_
