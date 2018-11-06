@@ -1,8 +1,4 @@
-language: minimal
-
-env:
-  DEFAULT_SETTING: default_job2
-  SPECIAL_SETTING: job2
+language: generic
 
 script:
-  - printenv | grep ^TRAVIS_
+  - which node
