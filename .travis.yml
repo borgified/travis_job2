@@ -8,11 +8,9 @@ jobs:
       if: env(SDK) = a
       env:
         SDK: a
-      script:
-        - echo $SDK
+      script: echo $SDK
      - stage: a
        if: env(SDK) = b
        env:
          SDK: b
-       script:
-         - echo $SDK
+       script: echo $SDK
