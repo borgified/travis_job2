@@ -1,4 +1,16 @@
 language: generic
 
-script:
-  - which node
+jobs:
+  include:
+    - stage: a
+      if: env(SDK) = a
+      env:
+        SDK: a
+      script:
+        - echo $SDK
+     - stage: a
+       if: env(SDK) = b
+       env:
+         SDK: b
+       script:
+         - echo $SDK
