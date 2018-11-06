@@ -1,3 +1,5 @@
+sudo: required
+
 language: generic
 
 jobs:
@@ -14,4 +16,3 @@ jobs:
          SDK: b
        script:
          - echo $SDK
-
