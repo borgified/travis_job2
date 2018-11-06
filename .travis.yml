@@ -4,12 +4,12 @@ language: generic
 
 jobs:
   include:
-    - stage: a
+    - stage: aaa
       if: env(SDK) = a
       env:
         SDK: a
       script: echo $SDK
-     - stage: a
+     - stage: aaa
        if: env(SDK) = b
        env:
          SDK: b
