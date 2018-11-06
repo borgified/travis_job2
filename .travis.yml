@@ -2,9 +2,9 @@ sudo: required
 
 language: generic
 
-env:
-  global:
-    SDK: a
+#env:
+#  global:
+#    SDK: b
 
 install:
   - echo "hello"
