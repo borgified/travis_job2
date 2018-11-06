@@ -13,11 +13,7 @@ jobs:
   include:
     - stage: aaa
       if: env(SDK) = a
-      env:
-        SDK: a
       script: echo $SDK
     - stage: aaa
       if: env(SDK) = b
-      env:
-        SDK: b
       script: echo $SDK
