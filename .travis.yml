@@ -1,19 +1,8 @@
 sudo: required
 
-language: generic
+language: minimal
 
-#env:
-#  global:
-#    SDK: b
+script:
+  - echo "branch: $TRAVIS_BRANCH"
+  - echo "event type: $TRAVIS_EVENT_TYPE"
 
-install:
-  - echo "hello"
-
-jobs:
-  include:
-    - stage: aaa
-      if: env(SDK) = a
-      script: echo $SDK
-    - stage: aaa
-      if: env(SDK) = b
-      script: echo $SDK
