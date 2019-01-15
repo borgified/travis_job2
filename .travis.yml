@@ -5,3 +5,4 @@ language: minimal
 script:
   - echo "$TRAVIS_BRANCH"
   - echo "$TRAVIS_EVENT_TYPE"
+
