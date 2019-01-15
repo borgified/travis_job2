@@ -3,6 +3,6 @@ sudo: required
 language: minimal
 
 script:
-  - echo "branch: $TRAVIS_BRANCH"
-  - echo "event type: $TRAVIS_EVENT_TYPE"
+  - echo "$TRAVIS_BRANCH"
+  - echo "$TRAVIS_EVENT_TYPE"
 
